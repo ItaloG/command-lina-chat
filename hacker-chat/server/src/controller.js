@@ -40,6 +40,7 @@ export default class Controller {
       currentUsers
     );
 
+    // avisa a rede que um novo usuario conectou-se
     this.broadCast({
       socketId,
       roomId,
