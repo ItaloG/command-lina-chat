@@ -4,8 +4,8 @@ export default class SocketClient {
   #serverConnection = {};
   #serverListener = new Event();
 
-  constructor({ host, port, protocol }) {
-    this.host = host;
+  constructor({ hostname, port, protocol }) {
+    this.host = hostname;
     this.port = port;
     this.protocol = protocol;
   }
